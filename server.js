@@ -1,38 +1,37 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
+<html> 
+<head>
+       
+            <link href="/ui/style.css" rel="stylesheet" />
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Oswald');
+            </style>
+         <title>
+        Article Three | Anushma Dubey
+        </title>    
+    </head>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+        <br>
+        <div>
+            <h3>Article Three | Anushma Dubey </h3>
+        </div>
+        <div>
+            <h4>09th March, 2018</h4>
+        </div>
+        <div>
+            <p>
+               This is the content for my article. This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.
+            </p>    
+            <p>
+                This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.
+            </p>
+            <p>
+                This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.
+            </p>
+        </div>
+    </body>
 
-var app = express();
-app.use(morgan('combined'));
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-app.get('/article-one',function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
-
-app.get('/article-two',function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three',function (req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
-
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
-
-// Do not change port, otherwise your app won't run on IMAD servers
-// Use 8080 only for local development if you already have apache running on 80
-
-var port = 80;
-app.listen(port, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
-});
+    
+</html>
